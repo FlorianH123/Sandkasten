@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "Playground"
+
+server:
+    port: 8090
+    servlet:
+      context-path: "/api"
+
+---
+
+spring:
+  profiles: develop
+
+---
+
+spring:
+  profiles: production
+
+---
+
+spring:
+  profiles: docker
